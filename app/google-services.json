@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "502616008594",
+    "firebase_url": "https://mesenc-43fb2.firebaseio.com",
+    "project_id": "mesenc-43fb2",
+    "storage_bucket": "mesenc-43fb2.appspot.com"
+  },
+  "client": [
+
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502616008594:android:d076e59549b8099922434b",
+        "android_client_info": {
+          "package_name": "com.yadavsourabh4035.gmail.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502616008594-8omdi6n79vmv6trlkd504ovv9vs01p7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCezOJO1m4HvcobGpz68mhY8vihckO7Jh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502616008594-8omdi6n79vmv6trlkd504ovv9vs01p7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
