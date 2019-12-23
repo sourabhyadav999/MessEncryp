@@ -7,22 +7,18 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Handler;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Map;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class SplashScreen extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
-
-
-
     private ProgressDialog progressDialog;
     private Context context;
     private int userid;
@@ -32,14 +28,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-
-
-
-
-
-
-
-
 
         sharedPreferences = getSharedPreferences("BasicAppDetails", MODE_PRIVATE);
         SessionManagement sessionManagement = new SessionManagement(this);
@@ -59,19 +47,27 @@ public class SplashScreen extends AppCompatActivity {
 
             if(isNetworkAvailable()) {
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                finish();
                 startActivity(intent);
             }
             else
             {
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                finish();
                 startActivity(intent);
             }
         }
+
         else{
-
-                Intent intent = new Intent(SplashScreen.this, LoginScreen.class);
-                startActivity(intent);
-
+            Handler h = new Handler();
+            h.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(SplashScreen.this, LoginScreen.class);
+                    startActivity(intent);
+                    finish();
+                }
+            },3000);
         }
     }
 

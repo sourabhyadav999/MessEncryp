@@ -7,55 +7,53 @@
     tools:context=".MainActivity">
 
 
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
 
-        <Button
-            android:id="@+id/encrypt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#0091EA"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="Encrypt Your Message"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/round_btn"
-            android:backgroundTint="#0091EA"
-            android:paddingStart="40dp"
-            android:paddingEnd="40dp"
-            android:text="Encrypt Your Message"
-            android:textColor="#fff" />
     <Button
         android:id="@+id/decrypt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/encrypt"
         android:background="@drawable/round_btn"
         android:backgroundTint="#0091EA"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:text="Decrypt Your Message"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/encrypt" />
+
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/decrypt"
         android:background="@drawable/round_btn"
         android:backgroundTint="#0091EA"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:text="Logout"
-        android:textColor="#fff" />
-
-
-
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/decrypt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

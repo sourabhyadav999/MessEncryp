@@ -5,18 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Encrypt">
+
     <EditText
+        android:id="@+id/encrypttext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:id="@+id/encrypttext"
         android:autofillHints="Encrypt Your Text"
-
-
-        android:inputType="textMultiLine">
-        <requestFocus/>
-    </EditText>
-
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/encryptbtn"
@@ -38,17 +34,13 @@
         app:layout_goneMarginTop="100dp" />
 
     <EditText
+        android:id="@+id/encryptedtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:visibility="gone"
-
         app:layout_constraintTop_toBottomOf="@id/encryptbtn"
-        android:id="@+id/encryptedtext"
-        app:layout_goneMarginTop="100dp"
-        />
-
-
-
+        app:layout_goneMarginTop="100dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
