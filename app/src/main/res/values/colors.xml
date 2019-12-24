@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!--    <color name="colorPrimary">#008577</color>-->
+    <!--    <color name="colorPrimaryDark">#00574B</color>-->
+    <!--    <color name="colorAccent">#D81B60</color>-->
 
     <!--BASE THEME-->
-<!--    <color name="colorPrimary">#413c69</color>-->
-<!--    <color name="colorPrimaryLight">#6e6697</color>-->
-<!--    <color name="colorPrimaryDark">#16163e</color>-->
-<!--    <color name="colorAccent">#AD62AA</color>-->
+    <color name="colorPrimary">#01998A</color>
+    <color name="colorPrimaryLight">#3FB2A7</color>
+    <color name="colorPrimaryDark">#01998A</color>
+    <color name="colorAccent">#f18a31</color>
 
-<!--    <color name="colorSecondary">#4a47a3</color>-->
-<!--    <color name="colorSecondaryLight">#7c73d5</color>-->
-<!--    <color name="colorSecondaryDark">#0e1f73</color>-->
+    <!--    <color name="colorSecondary">#4a47a3</color>-->
+    <!--    <color name="colorSecondaryLight">#7c73d5</color>-->
+    <!--    <color name="colorSecondaryDark">#0e1f73</color>-->
 
 </resources>

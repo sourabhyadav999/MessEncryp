@@ -6,4 +6,8 @@
     <string name="service_logo">service logo</string>
     <string name="welcome_to_messageencrypt">Welcome to MessageEncrypt</string>
     <string name="please_signin_to_continue">Please SignIn to continue</string>
+    <string name="message_encryption">Encrypt</string>
+    <string name="message_decryption">Decrypt</string>
+    <string name="logout">Logout</string>
+    <string name="main_design">main design</string>
 </resources>

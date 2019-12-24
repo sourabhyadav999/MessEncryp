@@ -1,18 +1,16 @@
 package com.yadavsourabh4035.gmail.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Encrypt extends AppCompatActivity {
     private EditText encrypttext;
-    private EditText encryptedtext;
+    private TextView encryptedtext;
     private Button encryptbtn;
     private UserDetailDatabaseHelper userDetailDatabaseHelper;
 
