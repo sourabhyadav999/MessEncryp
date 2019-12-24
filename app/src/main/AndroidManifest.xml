@@ -30,8 +30,7 @@
             android:theme="@style/AppTheme.Translucent" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.Translucent" >
-        </activity>
+            android:theme="@style/AppTheme.Translucent" />
         <activity
             android:name=".Encrypt"
             android:theme="@style/AppTheme.Translucent" />

@@ -10,4 +10,7 @@
     <string name="message_decryption">Decrypt</string>
     <string name="logout">Logout</string>
     <string name="main_design">main design</string>
+    <string name="encryption_key">Encryption key</string>
+    <string name="encrypted_message">Encrypted Message</string>
+    <string name="enter_message">Enter Message</string>
 </resources>

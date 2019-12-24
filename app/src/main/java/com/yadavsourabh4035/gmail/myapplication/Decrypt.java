@@ -1,18 +1,17 @@
 package com.yadavsourabh4035.gmail.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Decrypt extends AppCompatActivity {
-    private EditText encrypttodecrypt,encryptionkey,decryptedtext;
+    private EditText encrypttodecrypt,encryptionkey;
+    private TextView decryptedtext;
     private Button decrypbtn;
-    private LinearLayout dtext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,6 @@ public class Decrypt extends AppCompatActivity {
         encrypttodecrypt=findViewById(R.id.encrypttodecrypt);
         encryptionkey=findViewById(R.id.encryptionkey);
         decryptedtext=findViewById(R.id.decryptedtext);
-        dtext=findViewById(R.id.dtext);
         decrypbtn=findViewById(R.id.decrypbtn);
         decrypbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +31,7 @@ public class Decrypt extends AppCompatActivity {
                 String Key1=encryptionkey.getText().toString();
                 char [] keyArray=Key1.toCharArray();
                 int p;
-                String output="";
+                StringBuilder output= new StringBuilder();
                 int keyint=0;
                 for(char h:keyArray)
                 {
@@ -41,8 +39,7 @@ public class Decrypt extends AppCompatActivity {
                 }
                 for (char c:charArray)
                 {
-                    int z=c;
-                    p=inverse(z);
+                    p=inverse((int) c);
 
 
 
@@ -61,7 +58,7 @@ public class Decrypt extends AppCompatActivity {
 
                         p = inverse(p);
                     }
-                    output+=(char) p;
+                    output.append((char) p);
 
 
 
@@ -72,9 +69,7 @@ public class Decrypt extends AppCompatActivity {
 
                 System.out.println(output);
 
-                decryptedtext.setText(output);
-                dtext.setVisibility(View.VISIBLE);
-
+                decryptedtext.setText(output.toString());
             }
         });
     }
